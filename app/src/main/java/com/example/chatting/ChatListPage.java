@@ -1,6 +1,7 @@
 package com.example.chatting;
 
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class ChatListPage extends AppCompatActivity {
