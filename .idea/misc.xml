@@ -13,7 +13,9 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_chat_room_page.xml" value="0.1875" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_edit_info.xml" value="0.1875" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_main.xml" value="0.1875" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register_account.xml" value="0.196875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register_userinfo.xml" value="0.29957264957264956" />
       </map>
     </option>
   </component>
