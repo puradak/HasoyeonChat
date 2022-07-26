@@ -4,6 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/USER/AndroidStudioProjects/Chatting/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Chatting/app/src/main/res/layout/activity_main2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Chatting/app/src/main/res/layout/activity_register.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/drawable/custom_button.xml" value="0.2035" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/drawable/custom_edit_text_black_border.xml" value="0.366" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2755" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_chat_list_page.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_chat_room_page.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_edit_info.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register_account.xml" value="0.196875" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/HasoyeonChat/app/src/main/res/layout/activity_register_userinfo.xml" value="0.29957264957264956" />
       </map>
     </option>
   </component>

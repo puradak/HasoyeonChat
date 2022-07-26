@@ -11,17 +11,34 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Chatting"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".EditInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ChatRoomPage"
+            android:exported="false" />
+        <activity
+            android:name=".ChatListPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainPage"
+            android:exported="false"/>
+        <activity
+            android:name=".Register_Account_Page"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Register_UserInfo_Page"
+            android:exported="false" />
+
     </application>
 
 </manifest>
