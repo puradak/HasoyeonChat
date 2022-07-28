@@ -2,7 +2,7 @@ package com.example.chatting.ChatPackage;
 
 import java.io.Serializable;
 
-public class ChatData implements Serializable {
+public class ChatData {
     private String msg;         // 채팅 메시지 내용
     private String nickname;    // 닉네임
 
