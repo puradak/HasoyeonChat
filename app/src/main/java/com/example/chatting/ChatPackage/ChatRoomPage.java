@@ -1,5 +1,5 @@
 // 채팅방 페이지
-package com.example.chatting;
+package com.example.chatting.ChatPackage;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
