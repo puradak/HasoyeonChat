@@ -36,6 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.321" />
+
     <TextView
         android:id="@+id/notify_exist_email"
         android:layout_width="wrap_content"
@@ -49,6 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.410" />
+
     <EditText
         android:id="@+id/et_email"
         android:layout_width="353dp"

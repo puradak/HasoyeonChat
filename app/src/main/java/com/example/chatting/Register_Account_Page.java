@@ -38,6 +38,8 @@ public class Register_Account_Page extends AppCompatActivity {
             notify_exist_email = findViewById(R.id.notify_exist_email);
         }
 
+
+
         public void confirm_clicked(View v) {
             String id = ((EditText) findViewById(R.id.et_email)).getText().toString();
             String pwd = ((EditText) findViewById(R.id.et_pwd)).getText().toString();

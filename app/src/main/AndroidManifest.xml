@@ -26,7 +26,7 @@
             android:name=".MainPage"
             android:exported="false"/>
         <activity
-            android:name=".Register_Account_Page"
+            android:name=".Register_UserInfo_Page"
             android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
         </activity>
 
         <activity
-            android:name=".Register_UserInfo_Page"
+            android:name=".Register_Account_Page"
             android:exported="false" />
 
     </application>
