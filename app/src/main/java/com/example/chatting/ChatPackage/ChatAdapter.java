@@ -61,6 +61,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
         holder.TextView_nickname.setText(chat.getNickname());
         holder.TextView_msg.setText(chat.getMsg());
 
+        // 보낸 사람이 나인지, 다른 사람인지에 따라 메시지가 뜨는 위치가 우측, 좌측으로 변경
         if(chat.getNickname().equals(this.myNickName)) {
             holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
             holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
