@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register_Account_Page">
+    android:background="@drawable/background"
+    tools:context=".Register_Account_Page"
+
+        >
 
     <!--회원가입-->
     <TextView
@@ -160,6 +163,7 @@
         android:text="취소"
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:onClick="account_cancel_clicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.325"

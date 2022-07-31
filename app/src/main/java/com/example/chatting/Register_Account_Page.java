@@ -45,7 +45,10 @@ public class Register_Account_Page extends AppCompatActivity {
             String id = ((EditText) findViewById(R.id.et_email)).getText().toString();
             String pwd = ((EditText) findViewById(R.id.et_pwd)).getText().toString();
             String pwd_check = ((EditText) findViewById(R.id.et_pwd_check)).getText().toString();
-
+            if(id.isEmpty() || pwd.isEmpty() || pwd_check.isEmpty()){
+                Toast.makeText(Register_Account_Page.this, "아이디 또는 비밀번호를 입력하세요.", Toast.LENGTH_SHORT).show();
+                return;
+            }
             if (pwd.equals(pwd_check)) {
                 notify_diff_pwd.setText(" ");
 
@@ -79,6 +82,10 @@ public class Register_Account_Page extends AppCompatActivity {
             else {
                 notify_diff_pwd.setText("비밀번호와 다릅니다.");
             }
+        }
+
+        public void account_cancel_clicked(View v){
+            finish();
         }
 
         public FirebaseAuth getCurrentFirebaseAuth(){

@@ -45,15 +45,26 @@ public class Register_UserInfo extends AppCompatActivity {
 
         String userNickname = ((EditText)findViewById(R.id.et_nickname)).getText().toString();
         user.setNickname(userNickname);
+        if(userNickname.isEmpty()){
+            Toast.makeText(Register_UserInfo.this, "닉네임을 입력해주세요.", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         mDbRef.child("UserAccount").child(user.getUID()).setValue(user);
-        Toast.makeText(Register_UserInfo.this, "닉네임이 설정되었습니다.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(Register_UserInfo.this, "이미지와 닉네임이 설정되었습니다.", Toast.LENGTH_SHORT).show();
 
+        Intent intent = new Intent(Register_UserInfo.this, LoginPage.class);
+        startActivity(intent);
+        finish();
     }
 
     public void imgBtn_clicked(View v){
         Intent intent = new Intent(Register_UserInfo.this,Select_userImage.class);
         startActivity(intent);
+    }
+
+    public void userinfo_cancel_clicked(View v){
+        finish();
     }
 
     public static ImageButton getImgBtn(){
