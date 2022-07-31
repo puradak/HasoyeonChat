@@ -172,7 +172,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        android:onClick="confirm_clicked"
+        android:onClick="account_confirm_clicked"
         android:text="확인"
         android:textColor="@color/black"
         android:textSize="18sp"

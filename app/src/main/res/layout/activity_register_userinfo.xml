@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register_UserInfo_Page">
+    tools:context=".Register_UserInfo">
 
 
     <TextView
-        android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="유 저 정 보 설 정"
@@ -24,7 +23,6 @@
 
     <!-- 유저 사진 -->
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="사진을 클릭하여 유저사진을 설정하세요."
@@ -37,12 +35,15 @@
         app:layout_constraintVertical_bias="0.533" />
 
     <!-- 닉네임 설정 -->
-    <ImageView
-        android:id="@+id/userImage"
+    <ImageButton
+        android:id="@+id/user_image"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/round_image"
         android:src="@drawable/apeach_1"
+        android:background="@drawable/btn_userimage_round"
+        android:clipToOutline="true"
+        android:scaleType="fitCenter"
+        android:onClick="imgBtn_clicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -82,11 +83,11 @@
 
     <!-- 확인 버튼 -->
     <Button
-        android:id="@+id/btn_confirm"
+        android:id="@+id/confirm_Clicked_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        android:onClick="confirm_clicked"
+        android:onClick="userinfo_confirm_clicked"
         android:text="확인"
         android:textColor="@color/black"
         android:textSize="18sp"

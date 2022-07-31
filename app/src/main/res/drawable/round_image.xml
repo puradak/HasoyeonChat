@@ -9,7 +9,7 @@
         android:radius="190dp"/>
 
     <stroke
-        android:width="2dp"
+        android:width="4sp"
         android:color="@color/black"/>
 
 </shape>

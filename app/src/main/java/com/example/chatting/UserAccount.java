@@ -5,8 +5,25 @@ public class UserAccount {
     String email;
     String password;
     String nickname;
+    String image = "apeach_1";
 
     public UserAccount() {}
+
+    public UserAccount(String UID, String email, String password, String nickname, String image) {
+        this.UID = UID;
+        this.email = email;
+        this.password = password;
+        this.nickname = nickname;
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 
     public String getUID() {
         return UID;
