@@ -14,33 +14,44 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".Register_Account_Page"
+            android:exported="false" />
+        <activity
             android:name=".EditInfo"
             android:exported="false" />
         <activity
             android:name=".ChatPackage.ChatRoomPage"
-            android:exported="true" >
+            android:exported="false" />
+        
+        <activity
+            android:name=".ChatListPage"
+            android:exported="false" />
+            
+        <activity
+            android:name=".CreateChatRoom"
+            android:exported="false" />
+            
+        <activity
+            android:name=".Register_Account_Page"
+            android:exported="false" />
+            
+        <activity
+            android:name=".Select_userImage"
+            android:exported="false" />
+            
+        <activity
+            android:name=".Register_UserInfo"
+            android:exported="false" />
+            
+        <activity
+            android:name=".LoginPage"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ChatListPage"
-            android:exported="false" />
-        <activity
-            android:name=".MainPage"
-            android:exported="false"/>
-        <activity
-            android:name=".Register_Account_Page"
-            android:exported="false" >
-
-        </activity>
-
-        <activity
-            android:name=".Register_UserInfo_Page"
-            android:exported="false" />
-
     </application>
 
 </manifest>

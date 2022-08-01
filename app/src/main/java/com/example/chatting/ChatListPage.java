@@ -3,7 +3,9 @@ package com.example.chatting;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+
 public class ChatListPage extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
