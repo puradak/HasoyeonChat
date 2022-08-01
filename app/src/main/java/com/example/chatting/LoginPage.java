@@ -13,22 +13,25 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class LoginPage extends AppCompatActivity {
 
-    FirebaseAuth mAuth;
-    DatabaseReference mDbRef;
-
+    private FirebaseAuth mAuth;
+    private static DatabaseReference mDbRef;
+    private static FirebaseUser mUser;
+    private static UserAccount user;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-
         mAuth = FirebaseAuth.getInstance();
         mDbRef = FirebaseDatabase.getInstance().getReference("HasoyeonChat");
-
     }
 
     public void register_clicked(View v){
@@ -47,7 +50,25 @@ public class LoginPage extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Intent intent = new Intent(LoginPage.this, ChatListPage.class);
+                    mUser = mAuth.getCurrentUser();
+
+                    String userId = mUser.getUid();
+                    mDbRef.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            for(DataSnapshot ds : snapshot.getChildren()) {
+                                user = getUserAccountFromDB(userId,snapshot);
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+
+                    Intent intent = new Intent(LoginPage.this, CreateChatRoom.class);
                     startActivity(intent);
                     finish();
                 }
@@ -56,6 +77,21 @@ public class LoginPage extends AppCompatActivity {
                 }
             }
         });
+    }
 
+    public UserAccount getUserAccountFromDB(String userId, DataSnapshot ds){
+        UserAccount ua;
+        ua = new UserAccount(
+                ds.child("UserAccount").child(userId).getValue(UserAccount.class).getUID(),
+                ds.child("UserAccount").child(userId).getValue(UserAccount.class).getEmail(),
+                ds.child("UserAccount").child(userId).getValue(UserAccount.class).getPassword(),
+                ds.child("UserAccount").child(userId).getValue(UserAccount.class).getNickname(),
+                ds.child("UserAccount").child(userId).getValue(UserAccount.class).getImage()
+                );
+        return ua;
+    }
+
+    public static UserAccount getMyAccount(){
+        return user;
     }
 }
