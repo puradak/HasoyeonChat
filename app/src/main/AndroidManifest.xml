@@ -20,20 +20,29 @@
             android:name=".EditInfo"
             android:exported="false" />
         <activity
-            android:name=".ChatRoomPage"
+            android:name=".ChatPackage.ChatRoomPage"
             android:exported="false" />
+        
         <activity
             android:name=".ChatListPage"
             android:exported="false" />
+            
         <activity
             android:name=".CreateChatRoom"
             android:exported="false" />
+            
+        <activity
+            android:name=".Register_Account_Page"
+            android:exported="false" />
+            
         <activity
             android:name=".Select_userImage"
             android:exported="false" />
+            
         <activity
             android:name=".Register_UserInfo"
             android:exported="false" />
+            
         <activity
             android:name=".LoginPage"
             android:exported="true">
